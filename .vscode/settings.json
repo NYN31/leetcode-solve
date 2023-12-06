@@ -1,9 +1,5 @@
 {
-  "C_Cpp.errorSquiggles": "disabled",
   "files.associations": {
-    "iostream": "cpp",
-    "ostream": "cpp",
-    "bitset": "cpp"
-  },
-  "html.suggest.html5": true
+    "iostream": "cpp"
+  }
 }
