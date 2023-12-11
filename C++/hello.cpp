@@ -1,5 +1,32 @@
+
 #include <bits/stdc++.h>
 using namespace std;
+#define ll long long
+
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
+typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds_set;
+
+void solve()
+{
+
+    pbds_set st;
+    st.insert(10);
+    st.insert(20);
+    st.insert(30);
+    st.insert(40);
+    st.insert(40);
+
+    for (int x : st)
+    {
+        cout << x << endl;
+    }
+
+    cout << " " << st.order_of_key(30) << endl;
+
+    return;
+}
 
 int main()
 {
@@ -16,8 +43,7 @@ int main()
     cin >> t;
     while (t--)
     {
-       int n; cin >> n;
-       cout << n * 5 << endl;
+        solve();
     }
     return 0;
 }
