@@ -20,9 +20,8 @@ class Solution {
       }
     }
     for (int i = 0; i < 26; i++) {
-      for (int j = 0; j < frq[i]; j++) {
-        curr.push_back(i + 'a');
-      }
+      char ch = char(i + 'a');
+      curr = myPush(curr, frq[i], ch);
     }
     return curr;
   }
