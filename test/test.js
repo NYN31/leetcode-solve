@@ -1,40 +1,17 @@
 const a = {
-  firstname: "Md Sajjad Hosen",
-  lastname: "Noyon",
-  email: "noyoncse3101@gmail.com",
-  role: "USER",
-  userDetails: {
-    objective: "Objectives",
-    skills: [
+  userId: 1,
+  title: "title 1",
+  done: "false",
+  todoItems: {
+    todoItems: [
       {
-        name: "Programming",
-        description: "Programming description"
+        text: "text 1",
+        completed: true,
       },
       {
-        name: "Frontend",
-        description: "Frontend  description"
-      }
+        text: "text 2",
+        completed: false,
+      },
     ],
-    profileImage: null,
-    cv: null,
-    experiences: [
-      {
-        name: "Experience 1",
-        yearOfExperience: 4,
-        description: "Exp 1 Des",
-        link: null
-      }
-    ],
-    educations: [
-      {
-        title: 'BSc in CSE',
-        institution: 'IIUC',
-        graudationStartDate: null,
-        graduationEndDate: null,
-        result: "3.60"
-      }
-    ],
-    achivements: [],
-    SocialLink: []
-  }
-}
+  },
+};
