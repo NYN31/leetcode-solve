@@ -2,16 +2,6 @@
 using namespace std;
 
 class Solution {
-  void print(vector<vector<int>>& vis) {
-    for (int i = 0; i < vis.size(); i++) {
-      for (int j = 0; j < vis[i].size(); j++) {
-        cout << vis[i][j] << " ";
-      }
-      cout << endl;
-    }
-    cout << endl << endl;
-  }
-
  public:
   int countUnguarded(int m, int n, vector<vector<int>>& guards,
                      vector<vector<int>>& walls) {
@@ -26,8 +16,6 @@ class Solution {
     for (int i = 0; i < walls.size(); i++) {
       visited[walls[i][0]][walls[i][1]] = wall;  // 2 means wall
     }
-
-    print(visited);
 
     // 3 means seen cell
     for (int i = 0; i < m; i++) {
@@ -75,8 +63,6 @@ class Solution {
         }
       }
     }
-
-    print(visited);
 
     return ans;
   }
